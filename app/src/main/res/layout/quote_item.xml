@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="27dp"
+            android:layout_height="47dp"
+            android:fontFamily="serif"
+            android:text="\u201d"
+            android:textColor="#FF9800"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewQuote"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="27dp"
+            android:layout_height="47dp"
+            android:fontFamily="serif"
+            android:text="\u201c"
+            android:textColor="#FF9800"
+            android:textSize="50sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/textViewQuote"
+            app:layout_constraintEnd_toStartOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/textViewQuote"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="No one cane make you feel inferior without your consent." />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.90" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
